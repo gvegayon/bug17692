@@ -1,0 +1,16 @@
+Package: bug17692
+Type: Package
+Title: Reproduces bug 17692 on R 3.6.2
+Version: 0.1.0
+Authors@R: person("George", "Vega Yon", email = "g.vegayon@gmail.com", role = c("aut", "cre"))
+Description: It does exactly what the title does. The report of the bug can be
+  found in https://bugs.r-project.org/bugzilla/show_bug.cgi?id=17692.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.0.2
+Depends: parallel
+Imports: stats
+URL: https://github.com/gvegayon/bug17692
+BugReports: https://github.com/gvegayon/bug17692/issues
