@@ -2,3 +2,10 @@
 
 language: R
 cache: packages
+r_checks_args: --as-cran --use-valgrind
+
+r:
+  - devel
+  - release
+  - oldrel
+  - 3.6.2

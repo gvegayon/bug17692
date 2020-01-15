@@ -1,0 +1,47 @@
+---
+output: github_document
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/README-",
+  out.width = "100%"
+)
+```
+
+# bug17692
+
+<!-- badges: start -->
+<!-- badges: end -->
+
+The goal of bug17692 is to ...
+
+## Installation
+
+The development version from [GitHub](https://github.com/) with:
+
+``` r
+# install.packages("devtools")
+devtools::install_github("gvegayon/bug17692")
+```
+## Example
+
+This is a basic example which shows you how to solve a common problem:
+
+```{r example}
+library(bug17692)
+## basic example code
+
+cl <- makePSOCKcluster(2)
+mean(sim_pi(100, cl))
+stopCluster(cl) # This works OK with PSOCK cluster
+
+cl <- makeForkCluster(2)
+mean(sim_pi(100, cl))
+stopCluster(cl) # Valgrind detects errors here
+
+```
