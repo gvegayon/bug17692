@@ -14,3 +14,4 @@ Depends: parallel
 Imports: stats
 URL: https://github.com/gvegayon/bug17692
 BugReports: https://github.com/gvegayon/bug17692/issues
+Suggests: tinytest
